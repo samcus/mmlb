@@ -1,0 +1,74 @@
+@mixin form($selector) {
+  #{$selector}{
+    background: rgba(35,35,35,.95);
+    color: white;
+    padding: 2rem;
+    max-width: 330px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    @include respond-to(tablet){
+      float: left;
+      margin-top: 0rem;
+    };
+  }
+
+  #{$selector}__company{
+    text-align: center;
+  }
+
+  #{$selector}__company--full{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+
+  #{$selector}__heading{
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  #{$selector}__input{
+    border: none;
+    background: none;
+    color: white;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: .8rem;
+    border-bottom: solid 1px rgba(255,255,255,.15);
+    box-sizing: border-box;
+  }
+
+  #{$selector}__input--name{
+    background: url('../images/person.svg') center right no-repeat;
+    background-size: 1.5rem;
+    background-position: right .5rem top .75rem;
+  }
+
+  #{$selector}__input--email{
+    background: url('../images/mail.svg') center right no-repeat;
+    background-size: 1.5rem;
+    background-position: right .5rem top .0rem;
+  }
+
+  #{$selector}__button{
+    margin-top: 1.5rem;
+    text-align: center;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: .5rem;
+    background: #E8CCE5;
+    border-radius: 0;
+    -webkit-appearance: none;
+    cursor: pointer;
+    &:hover{
+      background: #E4B0DE;
+    }
+  }
+}
+
+@include form(".form");

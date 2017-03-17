@@ -1,0 +1,27 @@
+{
+  "name": "mmlb",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samcus/mmlb.git"
+  },
+  "author": "Samuel Anthony Custer",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/samcus/mmlb/issues"
+  },
+  "homepage": "https://github.com/samcus/mmlb#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-watch": "^4.3.11"
+  }
+}
